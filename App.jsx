@@ -1,3 +1,9 @@
+/**
+ * Application entry point to render the application.
+ *
+ * @author    Justin Hartman <code@justhart.com>
+ * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ */
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
