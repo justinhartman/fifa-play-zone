@@ -10,6 +10,7 @@ import {
   Alert, StyleSheet, SafeAreaView, StatusBar,
 } from 'react-native';
 import { WebView } from 'react-native-webview';
+import PropTypes from 'prop-types';
 import LoadingScreen from './LoadingScreen';
 
 /**
@@ -83,5 +84,14 @@ class WebviewScreen extends Component {
     );
   }
 }
+
+/**
+ * Define the prop types.
+ *
+ * @type {{uri: string}}
+ */
+WebviewScreen.propTypes = {
+  uri: PropTypes.string.isRequired,
+};
 
 export default WebviewScreen;
