@@ -8,6 +8,11 @@
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
+    "build": "npx eas build --no-wait",
+    "preview": "npx eas build --no-wait --profile preview",
+    "update:dev": "npx eas update --branch development",
+    "update:stage": "npx eas update --branch staging",
+    "update:prod": "npx eas update --branch production",
     "lint": "eslint -c .eslintrc.js *.jsx ./components/*.jsx ./constants/*.jsx --fix"
   },
   "dependencies": {
