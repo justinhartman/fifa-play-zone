@@ -11,10 +11,11 @@ import LoadingScreen from '../components/LoadingScreen.jsx';
 /**
  * A function that returns a React component that renders the Fantasy League webview.
  *
+ * @function FantasyLeague
  * @returns {JSX.Element}
  * @constructor
  */
-function FantasyLeague() {
+const FantasyLeague = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
@@ -25,13 +26,13 @@ function FantasyLeague() {
         source={{ uri: 'https://play.fifa.com/fantasy-classic/team' }}
         renderLoading={() => <LoadingScreen />}
         startInLoadingState={true}
-        onError={(syntheticEvent) => {
+        onError={() => {
           alert('Error loading page');
         }}
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

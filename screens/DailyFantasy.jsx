@@ -11,10 +11,11 @@ import LoadingScreen from '../components/LoadingScreen.jsx';
 /**
  * A function that returns a React component that renders the Daily Fantasy webview.
  *
+ * @function DailyFantasy
  * @returns {JSX.Element}
  * @constructor
  */
-function DailyFantasy() {
+const DailyFantasy = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
@@ -25,13 +26,13 @@ function DailyFantasy() {
         source={{ uri: 'https://play.fifa.com/fantasy-daily/team' }}
         renderLoading={() => <LoadingScreen />}
         startInLoadingState={true}
-        onError={(syntheticEvent) => {
+        onError={() => {
           alert('Error loading page');
         }}
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

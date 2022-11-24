@@ -11,10 +11,11 @@ import LoadingScreen from '../components/LoadingScreen.jsx';
 /**
  * A function that returns a React component that renders the Daily Challenge webview.
  *
+ * @function DailyChallenge
  * @returns {JSX.Element}
  * @constructor
  */
-function DailyChallenge() {
+const DailyChallenge = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
@@ -31,7 +32,7 @@ function DailyChallenge() {
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

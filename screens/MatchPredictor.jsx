@@ -11,10 +11,11 @@ import LoadingScreen from '../components/LoadingScreen.jsx';
 /**
  * A function that returns a React component that renders the Match Predictor webview.
  *
+ * @function MatchPredictor
  * @returns {JSX.Element}
  * @constructor
  */
-function MatchPredictor() {
+const MatchPredictor = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
@@ -25,13 +26,13 @@ function MatchPredictor() {
         source={{ uri: 'https://play.fifa.com/match-predictor/match' }}
         renderLoading={() => <LoadingScreen />}
         startInLoadingState={true}
-        onError={(syntheticEvent) => {
+        onError={() => {
           alert('Error loading page');
         }}
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

@@ -11,10 +11,11 @@ import LoadingScreen from '../components/LoadingScreen.jsx';
 /**
  * A function that returns a React component that renders the Bracket Challenge webview.
  *
+ * @function BracketChallenge
  * @returns {JSX.Element}
  * @constructor
  */
-function BracketChallenge() {
+const BracketChallenge = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
@@ -25,13 +26,13 @@ function BracketChallenge() {
         source={{ uri: 'https://play.fifa.com/bracket-predictor/brackets' }}
         renderLoading={() => <LoadingScreen />}
         startInLoadingState={true}
-        onError={(syntheticEvent) => {
+        onError={() => {
           alert('Error loading page');
         }}
       />
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

@@ -13,16 +13,20 @@ import DailyFantasy from './screens/DailyFantasy';
 import FantasyLeague from './screens/FantasyLeague';
 import MatchPredictor from './screens/MatchPredictor';
 
+/**
+ * A constant that defines the bottom tab navigator.
+ */
 const Tab = createBottomTabNavigator();
 
 /**
- * A function that returns a React component that renders the bottom tab navigator.
+ * A function that returns a React Navigation Container component that renders
+ * the bottom tab navigator.
  *
- * @function App
+ * @function TabNavigation
  * @returns {JSX.Element}
  * @constructor
  */
-export default function App() {
+const TabNavigation = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -98,4 +102,19 @@ export default function App() {
       </Tab.Navigator>
     </NavigationContainer>
   );
+};
+
+/**
+ * Main application component constructor.
+ *
+ * @function App
+ * @returns {JSX.Element}
+ * @constructor
+ */
+function App() {
+  return (
+    <TabNavigation />
+  );
 }
+
+export default App;
