@@ -14,11 +14,11 @@ import WebviewScreen from '../components/WebviewScreen';
  * @returns {JSX.Element}
  * @constructor
  */
-const BracketPredictor = () => {
+function BracketPredictor() {
   return (
-    <WebviewScreen uri={'https://play.fifa.com/bracket-predictor/brackets'}></WebviewScreen>
+    <WebviewScreen uri="https://play.fifa.com/bracket-predictor/brackets" />
   );
-};
+}
 
 /**
  * A function that returns a React component that renders the Daily Challenge webview.
@@ -27,11 +27,11 @@ const BracketPredictor = () => {
  * @returns {JSX.Element}
  * @constructor
  */
-const DailyChallenge = () => {
+function DailyChallenge() {
   return (
-    <WebviewScreen uri={'https://play.fifa.com/daily-challenge/'}></WebviewScreen>
+    <WebviewScreen uri="https://play.fifa.com/daily-challenge/" />
   );
-};
+}
 
 /**
  * A function that returns a React component that renders the Daily Fantasy webview.
@@ -40,11 +40,11 @@ const DailyChallenge = () => {
  * @returns {JSX.Element}
  * @constructor
  */
-const DailyFantasy = () => {
+function DailyFantasy() {
   return (
-    <WebviewScreen uri={'https://play.fifa.com/fantasy-daily/team'}></WebviewScreen>
+    <WebviewScreen uri="https://play.fifa.com/fantasy-daily/team" />
   );
-};
+}
 
 /**
  * A function that returns a React component that renders the Fantasy League webview.
@@ -53,11 +53,11 @@ const DailyFantasy = () => {
  * @returns {JSX.Element}
  * @constructor
  */
-const FantasyLeague = () => {
+function FantasyLeague() {
   return (
-    <WebviewScreen uri={'https://play.fifa.com/fantasy-classic/team'}></WebviewScreen>
+    <WebviewScreen uri="https://play.fifa.com/fantasy-classic/team" />
   );
-};
+}
 
 /**
  * A function that returns a React component that renders the Match Predictor webview.
@@ -66,11 +66,15 @@ const FantasyLeague = () => {
  * @returns {JSX.Element}
  * @constructor
  */
-const MatchPredictor = () => {
+function MatchPredictor() {
   return (
-    <WebviewScreen uri={'https://play.fifa.com/match-predictor/match'}></WebviewScreen>
+    <WebviewScreen uri="https://play.fifa.com/match-predictor/match" />
   );
-};
+}
+
+/**
+ * Export the app screens.
+ */
 export {
   BracketPredictor,
   DailyChallenge,

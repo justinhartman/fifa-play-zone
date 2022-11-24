@@ -6,9 +6,11 @@
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
  */
 import { Component } from 'react';
-import { Alert, StyleSheet, SafeAreaView, StatusBar } from 'react-native';
+import {
+  Alert, StyleSheet, SafeAreaView, StatusBar,
+} from 'react-native';
 import { WebView } from 'react-native-webview';
-import LoadingScreen from '../components/LoadingScreen';
+import LoadingScreen from './LoadingScreen';
 
 /**
  * Create the style sheet.
