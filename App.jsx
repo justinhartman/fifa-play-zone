@@ -7,11 +7,13 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import BracketChallenge from './screens/BracketChallenge';
-import DailyChallenge from './screens/DailyChallenge';
-import DailyFantasy from './screens/DailyFantasy';
-import FantasyLeague from './screens/FantasyLeague';
-import MatchPredictor from './screens/MatchPredictor';
+import {
+  BracketPredictor,
+  DailyChallenge,
+  DailyFantasy,
+  FantasyLeague,
+  MatchPredictor,
+} from './constants/AppScreens';
 
 /**
  * A constant that defines the bottom tab navigator.
@@ -90,7 +92,7 @@ function App() {
         />
         <Tab.Screen
           name="Bracket Challenge"
-          component={BracketChallenge}
+          component={BracketPredictor}
           options={{
             headerShown: false,
             tabBarLabel: 'Bracket',
