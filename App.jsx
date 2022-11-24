@@ -28,7 +28,12 @@ export default function App() {
       <Tab.Navigator
         initialRouteName="Daily Challenge"
         screenOptions={{
-          tabBarActiveTintColor: '#e91e63',
+          tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.5)',
+          tabBarStyle: {
+            backgroundColor: 'rgb(85, 0, 101)',
+            borderTopWidth: 0,
+            elevation: 0,
+          }
         }}>
         <Tab.Screen
           name="Daily Challenge"
@@ -39,6 +44,7 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="check-decagram" color={color} size={size} />
             ),
+            tabBarActiveTintColor: 'rgb(17, 153, 250)',
           }}
         />
         <Tab.Screen
@@ -50,6 +56,7 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="soccer" color={color} size={size} />
             ),
+            tabBarActiveTintColor: 'rgb(3, 207, 184)',
           }}
         />
         <Tab.Screen
@@ -61,6 +68,7 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="calendar-today" color={color} size={size} />
             ),
+            tabBarActiveTintColor: 'rgb(255, 255, 255)',
           }}
         />
         <Tab.Screen
@@ -72,6 +80,7 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="counter" color={color} size={size} />
             ),
+            tabBarActiveTintColor: 'rgb(246, 69, 1)',
           }}
         />
         <Tab.Screen
@@ -83,6 +92,7 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="sitemap" color={color} size={size} />
             ),
+            tabBarActiveTintColor: 'rgb(255, 0, 76)',
           }}
         />
       </Tab.Navigator>
