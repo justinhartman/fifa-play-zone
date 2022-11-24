@@ -6,33 +6,7 @@
  */
 import { StyleSheet, SafeAreaView, StatusBar } from 'react-native';
 import { WebView } from 'react-native-webview';
-import LoadingScreen from '../components/LoadingScreen.jsx';
-
-/**
- * A function that returns a React component that renders the Bracket Challenge webview.
- *
- * @function BracketChallenge
- * @returns {JSX.Element}
- * @constructor
- */
-const BracketChallenge = () => {
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content" />
-      <WebView
-        style={styles.container}
-        bounces={false}
-        originWhitelist={['*']}
-        source={{ uri: 'https://play.fifa.com/bracket-predictor/brackets' }}
-        renderLoading={() => <LoadingScreen />}
-        startInLoadingState={true}
-        onError={() => {
-          alert('Error loading page');
-        }}
-      />
-    </SafeAreaView>
-  );
-};
+import LoadingScreen from '../components/LoadingScreen';
 
 const styles = StyleSheet.create({
   container: {
@@ -43,5 +17,31 @@ const styles = StyleSheet.create({
     marginTop: -40,
   },
 });
+
+/**
+ * A function that returns a React component that renders the Bracket Challenge webview.
+ *
+ * @function BracketChallenge
+ * @returns {JSX.Element}
+ * @constructor
+ */
+function BracketChallenge() {
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar barStyle="dark-content" />
+      <WebView
+        style={styles.container}
+        bounces={false}
+        originWhitelist={['*']}
+        source={{ uri: 'https://play.fifa.com/bracket-predictor/brackets' }}
+        renderLoading={() => <LoadingScreen />}
+        startInLoadingState
+        onError={() => {
+          alert('Error loading page');
+        }}
+      />
+    </SafeAreaView>
+  );
+}
 
 export default BracketChallenge;

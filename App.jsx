@@ -19,14 +19,14 @@ import MatchPredictor from './screens/MatchPredictor';
 const Tab = createBottomTabNavigator();
 
 /**
- * A function that returns a React Navigation Container component that renders
- * the bottom tab navigator.
+ * Main application constructor that returns a React Navigation Container
+ * component and renders the bottom tab navigator.
  *
- * @function TabNavigation
+ * @function App
  * @returns {JSX.Element}
  * @constructor
  */
-const TabNavigation = () => {
+function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -37,8 +37,9 @@ const TabNavigation = () => {
             backgroundColor: 'rgb(85, 0, 101)',
             borderTopWidth: 0,
             elevation: 0,
-          }
-        }}>
+          },
+        }}
+      >
         <Tab.Screen
           name="Daily Challenge"
           component={DailyChallenge}
@@ -101,19 +102,6 @@ const TabNavigation = () => {
         />
       </Tab.Navigator>
     </NavigationContainer>
-  );
-};
-
-/**
- * Main application component constructor.
- *
- * @function App
- * @returns {JSX.Element}
- * @constructor
- */
-function App() {
-  return (
-    <TabNavigation />
   );
 }
 
