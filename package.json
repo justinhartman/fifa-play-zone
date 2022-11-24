@@ -4,7 +4,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "fix": "npx expo install --fix",
-    "start": "npx expo start",
+    "start": "npx expo start --tunnel",
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
@@ -16,6 +16,7 @@
     "@react-navigation/bottom-tabs": "^6.4.1",
     "@react-navigation/native": "^6.0.14",
     "@react-navigation/stack": "^6.3.5",
+    "eas-cli": "^2.7.1",
     "expo": "~47.0.6",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@expo/ngrok": "^4.1.0",
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",

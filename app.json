@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "fifa-play-zone",
+    "name": "FIFA Play Zone",
     "slug": "fifa-play-zone",
     "owner": "22digital",
     "version": "0.0.1",
@@ -29,6 +29,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d52ce5c7-67eb-49d8-908f-1914cbe467b0"
+      }
     }
   }
 }
