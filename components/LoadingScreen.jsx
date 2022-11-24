@@ -4,30 +4,12 @@
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
  */
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import {
   ActivityIndicator,
   StyleSheet,
   View,
 } from 'react-native';
-
-/**
- * Class describes loading screen component to use with network activity requests.
- */
-class LoadingScreen extends Component {
-  /**
-   * Render activity indicator view.
-   *
-   * @returns {JSX.Element}
-   */
-  render() {
-    return (
-      <View style={[styles.container, styles.horizontal]}>
-        <ActivityIndicator size='large' color='#FF0000' />
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -43,5 +25,23 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 });
+
+/**
+ * Class describes loading screen component to use with network activity requests.
+ */
+class LoadingScreen extends PureComponent {
+  /**
+   * Render activity indicator view.
+   *
+   * @returns {JSX.Element}
+   */
+  render() {
+    return (
+      <View style={[styles.container, styles.horizontal]}>
+        <ActivityIndicator size='large' color='#FF0000' />
+      </View>
+    );
+  }
+}
 
 export default LoadingScreen;
