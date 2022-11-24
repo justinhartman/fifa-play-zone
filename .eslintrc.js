@@ -21,10 +21,7 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
     'import/no-unresolved': 'off',
-    // 'react/jsx-filename-extension': 'off',
     'max-len': ['error', {code: 100, tabWidth: 2}],
     'react/react-in-jsx-scope': 'off',
-    // 'operator-linebreak': 'off',
-    // 'implicit-arrow-linebreak': 'off',
   },
 };

@@ -8,7 +8,7 @@
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
-    "lint": "eslint -c .eslintrc.js *.jsx ./components/*.jsx ./screens/*.jsx --fix"
+    "lint": "eslint -c .eslintrc.js *.jsx ./components/*.jsx ./constants/*.jsx --fix"
   },
   "dependencies": {
     "@expo/cli": "^0.4.9",
