@@ -7,3 +7,7 @@ This repo features an Expo React Native app that consolidates FIFA+ Play Zone fo
 - Daily Fantasy
 - Match Predictor
 - Bracket Predictor
+
+## License
+
+> This project is licensed under an [MIT License](https://justinhartman.mit-license.org/). Copyright © 2022 Justin Hartman, https://justinhartman.co <code@justhart.com>
