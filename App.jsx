@@ -3,6 +3,8 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @license   MIT
+ * @since     0.0.1
  */
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
@@ -13,7 +15,7 @@ import {
   DailyFantasy,
   FantasyLeague,
   MatchPredictor,
-} from './constants/AppScreens';
+} from './components/AppScreens';
 
 /**
  * A constant that defines the bottom tab navigator.
@@ -23,10 +25,8 @@ const Tab = createBottomTabNavigator();
 /**
  * Main application constructor that returns a React Navigation Container
  * component and renders the bottom tab navigator.
- *
- * @function App
- * @returns {JSX.Element}
  * @constructor
+ * @returns {JSX.Element} Navigation Container component with bottom tab navigator.
  */
 function App() {
   return (
