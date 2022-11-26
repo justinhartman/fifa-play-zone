@@ -41,7 +41,11 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "git-changelog": "^2.0.0",
+    "grunt": "^1.5.3",
+    "grunt-bump": "^0.8.0",
+    "grunt-git": "^1.1.1"
   },
   "private": true
 }
