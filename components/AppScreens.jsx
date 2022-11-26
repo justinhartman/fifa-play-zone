@@ -4,77 +4,69 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @license   MIT
+ * @since     1.0.0
  */
-import WebviewScreen from '../components/WebviewScreen';
+import {
+  BracketPredictorUri, DailyChallengeUri, DailyFantasyUri, FantasyLeagueUri, MatchPredictorUri,
+} from '../constants/AppConstants';
+import WebviewScreen from './WebviewScreen';
 
 /**
  * A function that returns a React component that renders the Bracket Challenge webview.
- *
- * @function BracketPredictor
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Bracket Predictor webview.
  * @constructor
  */
 function BracketPredictor() {
   return (
-    <WebviewScreen uri="https://play.fifa.com/bracket-predictor/brackets" />
+    <WebviewScreen uri={BracketPredictorUri} />
   );
 }
 
 /**
  * A function that returns a React component that renders the Daily Challenge webview.
- *
- * @function BracketPredictor
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Daily Challenge webview.
  * @constructor
  */
 function DailyChallenge() {
   return (
-    <WebviewScreen uri="https://play.fifa.com/daily-challenge/" />
+    <WebviewScreen uri={DailyChallengeUri} />
   );
 }
 
 /**
  * A function that returns a React component that renders the Daily Fantasy webview.
- *
- * @function DailyFantasy
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Daily Fantasy webview.
  * @constructor
  */
 function DailyFantasy() {
   return (
-    <WebviewScreen uri="https://play.fifa.com/fantasy-daily/team" />
+    <WebviewScreen uri={DailyFantasyUri} />
   );
 }
 
 /**
  * A function that returns a React component that renders the Fantasy League webview.
- *
- * @function FantasyLeague
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Fantasy League webview.
  * @constructor
  */
 function FantasyLeague() {
   return (
-    <WebviewScreen uri="https://play.fifa.com/fantasy-classic/team" />
+    <WebviewScreen uri={FantasyLeagueUri} />
   );
 }
 
 /**
  * A function that returns a React component that renders the Match Predictor webview.
- *
- * @function MatchPredictor
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Match Predictor webview.
  * @constructor
  */
 function MatchPredictor() {
   return (
-    <WebviewScreen uri="https://play.fifa.com/match-predictor/match" />
+    <WebviewScreen uri={MatchPredictorUri} />
   );
 }
 
-/**
- * Export the app screens.
- */
 export {
   BracketPredictor,
   DailyChallenge,
