@@ -21,7 +21,7 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
     'import/no-unresolved': 'off',
-    'max-len': ['error', {code: 100, tabWidth: 2}],
+    'max-len': ['error', {code: 120, tabWidth: 2}],
     'react/react-in-jsx-scope': 'off',
   },
 };

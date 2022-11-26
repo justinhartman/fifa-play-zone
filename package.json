@@ -13,7 +13,8 @@
     "update:dev": "npx eas update --branch development",
     "update:stage": "npx eas update --branch staging",
     "update:prod": "npx eas update --branch production",
-    "lint": "eslint -c .eslintrc.js *.jsx ./components/*.jsx ./constants/*.jsx --fix"
+    "lint": "eslint -c .eslintrc.js *.jsx ./components/*.jsx ./constants/*.jsx ./styles/*.jsx --fix",
+    "docs": "npx jsdoc App.jsx ./components/ ./constants/ ./styles/ -r -d ./docs"
   },
   "dependencies": {
     "@expo/cli": "^0.4.9",
