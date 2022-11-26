@@ -4,44 +4,28 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @since     1.0.0
  */
 import { Component } from 'react';
-import {
-  Alert, StyleSheet, SafeAreaView, StatusBar,
-} from 'react-native';
+import { Alert, SafeAreaView, StatusBar } from 'react-native';
 import { WebView } from 'react-native-webview';
 import PropTypes from 'prop-types';
 import LoadingScreen from './LoadingScreen';
-
-/**
- * Create the style sheet.
- */
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'transparent',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: -40,
-  },
-});
+import { GlobalStyles, WebviewStyles } from '../styles/StyleSheet';
 
 /**
  * A class that returns a React component that renders the webview.
- *
  * @class WebviewScreen
- * @interface WebviewScreen
  * @extends {Component}
+ * @param {object} props - The props passed to the component.
+ * @param {string} props.uri - The URI to load in the webview.
  * @returns {JSX.Element}
- * @param {object} props
- * @param {string} props.uri
  */
 class WebviewScreen extends Component {
   /**
    * Constructor that sets the initial state.
-   *
-   * @param {object} props
-   * @param {string} props.uri
+   * @param {object} props - The props passed to the component.
+   * @param {string} props.uri - The URI to load in the webview.
    */
   constructor(props) {
     // Call the parent constructor.
@@ -54,8 +38,8 @@ class WebviewScreen extends Component {
 
   /**
    * Render the webview.
-   *
    * @returns {JSX.Element}
+   * @throws {Alert} Alert if the webview fails to load.
    */
   render() {
     // Destructure the uri from the state.
@@ -63,10 +47,10 @@ class WebviewScreen extends Component {
 
     // Return the webview.
     return (
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={GlobalStyles.container}>
         <StatusBar barStyle="dark-content" />
         <WebView
-          style={styles.container}
+          style={WebviewStyles.webview}
           bounces={false}
           originWhitelist={['*']}
           source={{ uri }}

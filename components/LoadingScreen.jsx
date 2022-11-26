@@ -4,47 +4,28 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @since     1.0.0
  */
 import { PureComponent } from 'react';
-import { ActivityIndicator, StyleSheet, View } from 'react-native';
-
-/**
- * Create the style sheet.
- */
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(255,255,255,0.1)',
-  },
-
-  horizontal: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    padding: 10,
-  },
-});
+import { ActivityIndicator, View } from 'react-native';
+import { LoadingStyles } from '../styles/StyleSheet';
 
 /**
  * A class that returns a React component that renders the loading screen with
  * an activity indicator.
- *
  * @class LoadingScreen
- * @interface LoadingScreen
  * @extends {PureComponent}
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Activity Indicator view.
  */
 class LoadingScreen extends PureComponent {
   /**
    * Render activity indicator view.
-   *
    * @returns {JSX.Element}
    */
   render() {
     return (
-      <View style={[styles.container, styles.horizontal]}>
-        <ActivityIndicator size="large" color="#067CFD" />
+      <View style={LoadingStyles.wrapper}>
+        <ActivityIndicator size="large" color="#FFF" />
       </View>
     );
   }
