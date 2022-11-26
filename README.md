@@ -9,12 +9,12 @@ This repo features an Expo React Native app that consolidates FIFA+ Play Zone fo
 - Bracket Predictor
 
 <div style="text-align:left">
-<img src="./docs/images/IMG_2649.PNG" width="175" />
-<img src="./docs/images/IMG_2650.PNG" width="175" />
-<img src="./docs/images/IMG_2651.PNG" width="175" />
-<img src="./docs/images/IMG_2652.PNG" width="175" />
-<img src="./docs/images/IMG_2653.PNG" width="175" />
-<img src="./docs/images/IMG_2654.PNG" width="175" />
+<img src="./docs/images/IMG_2649.PNG" width="200" />
+<img src="./docs/images/IMG_2650.PNG" width="200" />
+<img src="./docs/images/IMG_2651.PNG" width="200" />
+<img src="./docs/images/IMG_2652.PNG" width="200" />
+<img src="./docs/images/IMG_2653.PNG" width="200" />
+<img src="./docs/images/IMG_2654.PNG" width="200" />
 </div>
 
 ## License
