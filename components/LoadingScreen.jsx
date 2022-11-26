@@ -4,6 +4,7 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @license   MIT
  * @since     1.0.0
  */
 import { PureComponent } from 'react';
@@ -13,14 +14,12 @@ import { LoadingStyles } from '../styles/StyleSheet';
 /**
  * A class that returns a React component that renders the loading screen with
  * an activity indicator.
- * @class LoadingScreen
  * @extends {PureComponent}
- * @returns {JSX.Element} Activity Indicator view.
  */
 class LoadingScreen extends PureComponent {
   /**
-   * Render activity indicator view.
-   * @returns {JSX.Element}
+   * Render activity indicator and return the loading screen.
+   * @returns {JSX.Element} Activity Indicator View component.
    */
   render() {
     return (

@@ -4,6 +4,7 @@
  *
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
+ * @license   MIT
  * @since     1.0.0
  */
 import { Component } from 'react';
@@ -15,11 +16,7 @@ import { GlobalStyles, WebviewStyles } from '../styles/StyleSheet';
 
 /**
  * A class that returns a React component that renders the webview.
- * @class WebviewScreen
- * @extends {Component}
- * @param {object} props - The props passed to the component.
- * @param {string} props.uri - The URI to load in the webview.
- * @returns {JSX.Element}
+ * @extends {React.Component}
  */
 class WebviewScreen extends Component {
   /**
@@ -38,7 +35,7 @@ class WebviewScreen extends Component {
 
   /**
    * Render the webview.
-   * @returns {JSX.Element}
+   * @returns {JSX.Element} Webview component.
    * @throws {Alert} Alert if the webview fails to load.
    */
   render() {
@@ -73,6 +70,7 @@ class WebviewScreen extends Component {
  * Define the prop types.
  *
  * @type {{uri: string}}
+ * @property {string} uri - The URI to load in the webview.
  */
 WebviewScreen.propTypes = {
   uri: PropTypes.string.isRequired,
