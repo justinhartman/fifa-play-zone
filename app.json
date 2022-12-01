@@ -24,9 +24,10 @@
       "bundleIdentifier": "ltd.22digital.playzone"
     },
     "android": {
+      "icon": "./assets/icon-android.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#067CFD"
+        "backgroundImage": "./assets/adaptive-icon.png"
       },
       "package": "ltd.digital22.playzone"
     },
