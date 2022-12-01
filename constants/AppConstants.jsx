@@ -4,6 +4,7 @@
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
  * @license   MIT
+ * @since     1.1.0 Introduced the Player Of The Match and Who Am I? constants.
  * @since     1.0.0
  */
 
@@ -37,10 +38,24 @@ const FantasyLeagueUri = 'https://play.fifa.com/fantasy-classic/team';
  */
 const MatchPredictorUri = 'https://play.fifa.com/match-predictor/match';
 
+/**
+ * The Who Am I? URI.
+ * @type {string}
+ */
+const WhoAmIUri = 'https://play.fifa.com/whoami/game';
+
+/**
+ * The Player Of The Match URI.
+ * @type {string}
+ */
+const PlayerMatchUri = 'https://play.fifa.com/budweiserpotm/';
+
 export {
   BracketPredictorUri,
   DailyChallengeUri,
   DailyFantasyUri,
   FantasyLeagueUri,
   MatchPredictorUri,
+  WhoAmIUri,
+  PlayerMatchUri,
 };

@@ -5,10 +5,12 @@
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
  * @license   MIT
+ * @since     1.1.0 Introduced the Player Of The Match and Who Am I? functions.
  * @since     1.0.0
  */
 import {
-  BracketPredictorUri, DailyChallengeUri, DailyFantasyUri, FantasyLeagueUri, MatchPredictorUri,
+  BracketPredictorUri, DailyChallengeUri, DailyFantasyUri, FantasyLeagueUri,
+  MatchPredictorUri, PlayerMatchUri, WhoAmIUri,
 } from '../constants/AppConstants';
 import WebviewScreen from './WebviewScreen';
 
@@ -67,10 +69,34 @@ function MatchPredictor() {
   );
 }
 
+/**
+ * A function that returns a React component that renders the Player Of The Match webview.
+ * @returns {JSX.Element} - Player Of The Match webview.
+ * @constructor
+ */
+function PlayerMatch() {
+  return (
+    <WebviewScreen uri={PlayerMatchUri} />
+  );
+}
+
+/**
+ * A function that returns a React component that renders the Who Am I? webview.
+ * @returns {JSX.Element} - Who Am I? webview.
+ * @constructor
+ */
+function WhoAmI() {
+  return (
+    <WebviewScreen uri={WhoAmIUri} />
+  );
+}
+
 export {
   BracketPredictor,
   DailyChallenge,
   DailyFantasy,
   FantasyLeague,
   MatchPredictor,
+  PlayerMatch,
+  WhoAmI,
 };

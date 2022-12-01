@@ -4,6 +4,7 @@
  * @author    Justin Hartman <code@justhart.com>
  * @copyright Copyright (c) 2022 Justin Hartman <https://justhart.com>
  * @license   MIT
+ * @since     1.1.0 Introduce Player of the Match and Who Am I? tabs.
  * @since     0.0.1
  */
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -15,6 +16,8 @@ import {
   DailyFantasy,
   FantasyLeague,
   MatchPredictor,
+  PlayerMatch,
+  WhoAmI,
 } from './components/AppScreens';
 
 /**
@@ -88,6 +91,30 @@ function App() {
               <MaterialCommunityIcons name="counter" color={color} size={size} />
             ),
             tabBarActiveTintColor: 'rgb(246, 69, 1)',
+          }}
+        />
+        <Tab.Screen
+          name="Player Of The Match"
+          component={PlayerMatch}
+          options={{
+            headerShown: false,
+            tabBarLabel: 'POTM',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="run-fast" color={color} size={size} />
+            ),
+            tabBarActiveTintColor: 'rgb(220, 0, 25)',
+          }}
+        />
+        <Tab.Screen
+          name="Who Am I?"
+          component={WhoAmI}
+          options={{
+            headerShown: false,
+            tabBarLabel: 'Guess',
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="head-question" color={color} size={size} />
+            ),
+            tabBarActiveTintColor: 'rgb(138, 21, 56)',
           }}
         />
         <Tab.Screen
