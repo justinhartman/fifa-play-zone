@@ -1,6 +1,17 @@
 {
   "name": "fifa-play-zone",
   "version": "1.1.0",
+  "description": "An Expo React Native app that consolidates FIFA+ Play Zone for the World Cup 2022 in Qatar.",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2022 Justin Hartman",
+  "author": "Justin Hartman <code@justhart.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinhartman/fifa-play-zone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justinhartman/fifa-play-zone/issues"
+  },
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "fix": "npx expo install --fix",
