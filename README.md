@@ -6,6 +6,8 @@ This repo features an Expo React Native app that consolidates FIFA+ Play Zone fo
 - Fantasy League
 - Daily Fantasy
 - Match Predictor
+- Player of the Match
+- Who Am I?
 - Bracket Predictor
 
 <div style="text-align:left">
